@@ -1,0 +1,39 @@
+{
+  "name": "web-deployer",
+  "version": "1.0.0",
+  "description": "Deploy any web project to Linux servers with auto-detection, systemd/Docker service management, Nginx reverse proxy, and independent ops toolkit generation.",
+  "author": "JR-Development-Skills",
+  "tags": [
+    "deployment",
+    "devops",
+    "systemd",
+    "docker",
+    "nginx",
+    "ssh",
+    "web",
+    "server",
+    "ops"
+  ],
+  "triggers": [
+    "deploy",
+    "部署",
+    "server setup",
+    "服务器部署",
+    "systemd",
+    "web deploy",
+    "web部署",
+    "ops scripts",
+    "运维脚本",
+    "/web-deployer"
+  ],
+  "dependencies": [
+    "paramiko"
+  ],
+  "supported_platforms": [
+    "linux"
+  ],
+  "languages": [
+    "en",
+    "zh"
+  ]
+}

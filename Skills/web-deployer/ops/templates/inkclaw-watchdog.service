@@ -1,0 +1,8 @@
+[Unit]
+Description=InkClaw Health Check Watchdog
+After=inkclaw-backend.service inkclaw-frontend.service
+
+[Service]
+Type=oneshot
+ExecStart={{PROJECT_DIR}}/ops/healthcheck.sh
+User=root

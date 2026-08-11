@@ -1,0 +1,33 @@
+[Unit]
+Description=InkClaw Next.js Frontend
+After=network-online.target inkclaw-backend.service
+Wants=network-online.target
+Requires=inkclaw-backend.service
+
+[Service]
+Type=simple
+User={{RUN_USER}}
+Group={{RUN_GROUP}}
+WorkingDirectory={{PROJECT_DIR}}
+Environment=NODE_ENV=production
+Environment=PORT={{FRONTEND_PORT}}
+Environment=PATH={{PATH_DIRS}}
+ExecStart={{NODE_BIN}} server.js
+Restart=on-failure
+RestartSec=5s
+StartLimitBurst=5
+StartLimitIntervalSec=300
+
+# Security hardening (relaxed for VNC: Xvfb needs /tmp/.X*, x11vnc needs /tmp)
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths={{PROJECT_DIR}} {{USER_DATA_DIR}}
+PrivateTmp=false
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=inkclaw-frontend
+
+[Install]
+WantedBy=multi-user.target

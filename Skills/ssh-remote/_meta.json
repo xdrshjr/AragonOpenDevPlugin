@@ -1,0 +1,20 @@
+{
+  "owner": "JR-Agent-Skills",
+  "slug": "ssh-remote",
+  "displayName": "SSH Remote Operations",
+  "description": "Execute commands, upload/download files, and check status on remote servers via SSH/SFTP using Python paramiko. Cross-platform (Windows, Linux, macOS) with password and key-based authentication support.",
+  "version": "1.0.0",
+  "tags": ["ssh", "sftp", "remote-server", "paramiko", "file-transfer", "devops", "server-management"],
+  "license": "MIT",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1742284800000
+  },
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1742284800000,
+      "notes": "Initial release with SSH command execution, SFTP upload/download, server status checks, and security best practices"
+    }
+  ]
+}
