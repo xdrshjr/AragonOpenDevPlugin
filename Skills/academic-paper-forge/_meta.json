@@ -1,0 +1,20 @@
+{
+  "owner": "JR-Agent-Skills",
+  "slug": "academic-paper-forge",
+  "displayName": "Academic Paper Forge",
+  "description": "Multi-agent academic paper writing system that analyzes code repositories, extracts innovations through structured debate with three-powers separation, and collaboratively writes publication-quality papers targeting top CS conferences",
+  "version": "1.0.0",
+  "tags": ["academic", "paper-writing", "multi-agent", "debate", "code-analysis", "three-powers"],
+  "license": "MIT",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773878400000
+  },
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1773878400000,
+      "notes": "Initial release with six-phase pipeline (Initialization, Code Analysis, Analysis Debate, Writing Plan Debate, Paper Writing, Assembly), three-powers review mechanism, and multi-format output"
+    }
+  ]
+}
